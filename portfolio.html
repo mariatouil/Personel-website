@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+   <meta name="viewport"content="width=device-widows">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--font awsome pour les icons"-->
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+	 
+	
+	  <link rel="icon" type="image/png" sizes="" href="favicon-32x32.png">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="portfolio.css">
+  </head>
+  <body>
+  
+  <section class="first">
+  <div class="title">
+ <div class="content">
+ 
+ <h3 class="title1">Touilzak Maria</h3>
+ 
+ <p>Full stack web developer </p>
+ </div>
+ </div>
+  <div class="nav">
+          <ul>
+           
+            <li><a href="portfolio.html">Home</a></li>
+		  <li><a href="portfolio2.html">About</a></li>
+		   <li><a href="portfolio3.html">Service</a></li>
+		   <li><a href="portfolio4.html">Education</a></li>
+		   <li><a href="portfolio5.html">Contact</a></li>
+		   
+          </ul>
+        </div>
+	<div class="perecircle">
+  <div class="premierdiv">
+  <div class="circle">
+  <div class="logo"></div>
+  <div class="text">
+  <p>Touilzak M aria - Full stack web developer - </p>
+  </div>
+  </div>
+ 
+ </div>
+  </div>
+  </section>
+ 
+  <!-- section home-->
+  
+  <section class="home" id="home">
+  <div class="contenu">
+<div class="contenthome">
+        <h3>hi there...</h3>
+        <h3 class="name">my name is <span>Touilzak maria</span></h3>
+		<br>
+        <h3 class="post">i am a <span class="typing-text">front end developer</span></h3>
+<div class="hireme">
+        <a href="personelcv.pdf"><i class="fas fa-download"></i>download CV</a>
+</div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-github"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class=" fab fas fa-envelope"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+		</div>
+</div>
+    </section>
+	
+	<!-- theme toggler  -->
+
+<div class="theme-toggler">
+<div class="color">
+    <span style="background: linear-gradient(to right, #808080, #3fada8);"></span>
+    <span style="background: linear-gradient(to right, #d66d75, #e29587);"></span>
+    <span style="background:linear-gradient(to right, #114357, #f29492)"></span>
+    <span style="background:linear-gradient(to right, #0f0c29, #302b63, #24243e)"></span>
+    <span style="background:linear-gradient(to right, #2980b9, #2c3e50)"></span>
+	</div>
+</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+   <script>
+  const text = document.querySelector('.text p');
+  text.innerHTML = text.innerText.split("").map(
+  (char, i) =>
+ ` <span style="transform:rotate(${i * 8.1}deg)">${char}</span>`
+   ).join("")
+   </script>
+   <script>
+    var type = new Typed('.typing-text',{
+        strings : [ 'web designer', 'front end developer', 'back end developer' ],
+        typeSpeed:200,
+        loop:true
+    });
+	let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+
+	
+
+ </script>
+  
+  </body>
+  </html>

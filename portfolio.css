@@ -11,7 +11,7 @@ body{
 	}
 	
 	
-
+	
 
 .first{
 color:white;
@@ -57,10 +57,6 @@ border-radius:10px;
 padding:0px 75px;
 text-align:center;
 box-shadow:2px 2px 5px 2px rgb(33 0 0 / 20%);
-	
-}
-.nav a:active first{
-	display:none
 	
 }
 a:hover{
@@ -141,17 +137,31 @@ ul{
 		transform:rotate(0deg)}
 			
 		}
-		
-		
-		
+.home{
+	width:750px;
+	height:500px;
+	
+	background:rgba(255,255,255,.2);
+	position:fixed;
+	left:310px;
+	
+	margin:35px ;
+	top:0;
+	color:white;
+	border-radius:10px;
+padding:20px;
+box-shadow:2px 2px 5px 2px rgb(0 0 0 / 10%);
 
+	
+	text-transform: capitalize;
+	
+}
 .contenthome{
 	position:absolute;
 	top:100px;
 	
 	
 }
-
 .contenu{
 	display:flex;
 	justify-content:center;
@@ -165,7 +175,7 @@ align-items:center;}
 }
 .home .name span{
     font-size:40px;
-
+	
     color:#fff;
 }
 .hireme{
@@ -174,10 +184,18 @@ align-items:center;}
 
 .hireme a{
 	text-transform:capitalize;
-	padding:8px 0px;
+	line-height:120px;
+	text-decoration:none;
+	padding:12px 25px 8px 15px;
 	border-radius:10px;
+	color:white;
+	font-size:15px;
+	box-shadow:2px 2px 5px 2px rgb(0 0 0 / 10%);
+	background:rgba(255,255,255,.2);
+	
+	
 }
-.hireme .btn:hover{
+.hireme a:hover{
 	 background:rgba(255,255,255,.5);
     color:#555;
 	
@@ -185,6 +203,7 @@ align-items:center;}
 	
 	
 }
+
 .btn {
 	text-transform:capitalize;
 margin-top:20px;
@@ -205,7 +224,7 @@ font-size:20px;
 	
 	
 
-
+	
 
 .share{
 	text-align:center;
@@ -220,6 +239,7 @@ box-shadow:2px 2px 5px 2px rgb(33 0 0 / 10%);
 background:rgba(255,255,255,.2);
 font-size:20px;
 	border:none;
+	margin-top:40px;
 }
 .fab{
 		padding:7px 15px;
@@ -237,7 +257,7 @@ font-size:30px;
 	.theme-toggler{
 		width:30px;
 	height:230px;
-	
+	box-shadow:2px 2px 5px 2px rgb(0 0 0 / 10%);
 	background:rgba(255,255,255,.2);
 	position:fixed;
 	right:30px;
@@ -247,7 +267,7 @@ font-size:30px;
 	color:white;
 	border-radius:10px;
 padding:20px;
-box-shadow:2px 2px 5px 2px rgb(0 0 0 / 10%);
+
 
 	
 	text-transform: capitalize;
@@ -270,135 +290,9 @@ top:30px;
     box-shadow: 0 0 0 .5rem rgba(255,255,255,.2),
                 0 1rem 2rem rgba(0,0,0,.4);
 }
-
-/*about*/
-.start,.home{
-    width:750px;
-	height:500px;
-	background:rgba(255,255,255,.2);
-	position:fixed;
-	left:310px;
-	margin:35px ;
-	top:0;
-	color:white;
-	border-radius:10px;
-    padding:20px;
-    box-shadow:2px 2px 5px 2px rgb(0 0 0 / 10%);
-	text-transform: capitalize;
-	overflow:hidden;
-  
-
+.fa-download{
+	margin-right:15px;
+font-size:23px;
+color:#f29492;
 
 }	
-   .about{
-	   margin:5px 30px;
-   }
-	.home{
-		display:none;
-	}
-	.heading{
-		margin-bottom:10px;
-		text-align:center;
-		font-size:25px;
-		letter-spacing:1px;
-	text-shadow:0 0px 10px #f29492;
-	animation:aboutme 2s infinite;}
-	@keyframes aboutme{
-	
-		0%{
-			opacity:0.1;
-			transform:scale(1,1);
-		}
-		50%{
-			opacity:0.5;
-			transform:scale(1,1);
-		}
-			
-		100%{
-			opacity:1;
-		}
-			
-		}
-		
-		
-	}
-.about .content2 h3 {
-	font-size:16px;
-    color:#fff;
-	
-	letter-spacing:1px;
-	
-}
-.about .content2 h3 span{
-	letter-spacing:1px;
-	font-size:25px;
-    color:#fff;
-}
-
-.about .content2 p{
-    font-size:15px;
-	text-transform:none;
-    color:#eee;
-    padding:.5rem 0;
-}
-
-.about .skills{
-	
-    padding-bottom:10px;
-	position:relative;
-	left:150px;
-	
-}
-
-.about .skills .progress{
-	
-    margin:5px;
-    padding:10px;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
-    background: rgba(255,255,255,.2);
-    border-radius: 1rem;
-	position:relative;
-	right:160px;
-}
-
-.about .skills .progress h3{
-    display: flex;
-    justify-content: space-between;
-    font-size:20px;
-    color:#fff;
-	letter-spacing:1px;
-}
-
-.about .skills .progress .bar{
-    position: relative;
-	
-    width:630px;
-    height:.3rem;
-    margin:10px 10px;
-    background:#555;
-}
-
-.about .skills .progress .bar span{
-    position: absolute;
-    top:0; left: 0;
-    height:100%;
-    
-    background:#fff;
-}
-
-.about .skills .progress:nth-child(1) .bar span{
-    width:95%;
-}
-
-.about .skills .progress:nth-child(2) .bar span{
-    width:85%;
-}
-
-.about .skills .progress:nth-child(3) .bar span{
-    width:65%;
-}
-
-.about .skills .progress:nth-child(4) .bar span{
-    width:70%;
-}
-
