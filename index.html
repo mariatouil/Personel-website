@@ -23,11 +23,14 @@
   <div class="title">
  <div class="content">
  
+ <!--<div class="title">
+ <div class="content">
+ 
  <h3 class="title1">Touilzak Maria</h3>
  
  <p>Full stack web developer </p>
  </div>
- </div>
+ </div>-->
   <div class="nav">
           <ul>
            
@@ -35,7 +38,8 @@
 		  <li><a href="portfolio2.html">About</a></li>
 		   <li><a href="portfolio3.html">Service</a></li>
 		   <li><a href="portfolio4.html">Education</a></li>
-		   <li><a href="portfolio5.html">Contact</a></li>
+		    <li><a href="portfolio5.html">Projects</a></li>
+		   <li><a href="portfolio6.html">Contact</a></li>
 		   
           </ul>
         </div>
@@ -87,6 +91,27 @@
 	</div>
 </div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+   <script>
+  const text = document.querySelector('.text p');
+  text.innerHTML = text.innerText.split("").map(
+  (char, i) =>
+ ` <span style="transform:rotate(${i * 8.1}deg)">${char}</span>`
+   ).join("")
+   </script>
+   <script>
+    var type = new Typed('.typing-text',{
+        strings : [ 'web designer', 'front end developer', 'back end developer' ],
+        typeSpeed:200,
+        loop:true
+    });
+	let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
    <script>
   const text = document.querySelector('.text p');
